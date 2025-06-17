@@ -584,3 +584,37 @@ def get_direction(A, B):
         direction += "left"
     
     return direction.strip()
+
+def get_direction_6d(A, B, eps):
+    # Unpack the positions and rotation angle (in radians)
+    x_A, y_A, theta_A = A
+    x_B, y_B, theta_B = B
+    
+    # Calculate the relative position vector from A to B
+    rel_vector = np.array([x_B - x_A, y_B - y_A])
+    
+    # Define the rotation matrix to inverse rotate by theta_A
+    rotation_matrix = np.array([[np.cos(-theta_A), -np.sin(-theta_A)], 
+                                [np.sin(-theta_A), np.cos(-theta_A)]])
+    
+    # Rotate the relative vector to align with A's orientation
+    transformed_vector = np.dot(rotation_matrix, rel_vector)
+    
+    # Determine direction based on the transformed vector
+    direction = ""
+    # import ipdb; ipdb.set_trace()
+    if transformed_vector[0] > eps:
+        direction += "right "
+    elif transformed_vector[0] < -eps:
+        direction += "left "
+    else:
+        direction += "same "
+    
+    if transformed_vector[1] > eps:
+        direction += "front"
+    elif transformed_vector[1] < -eps:
+        direction += "behind"
+    else:   
+        direction += "same"
+    
+    return direction.strip().split(' ')

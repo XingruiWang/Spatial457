@@ -348,7 +348,7 @@ def render_scene(args,
     train_backgrounds, test_backgrounds = hdri_source.get_test_split(fraction=0.1)
     # train_backgrounds = [name]
     
-    with open('/home/xingrui/vqa/super-clevr-gen/HDRI_haven.json', 'r') as f:
+    with open('data/HDRI_haven.json', 'r') as f:
         hdri_data = json.load(f)["assets"]
     hdri_ids = [name for name in hdri_data if "outdoor" in hdri_data[name]["metadata"]["categories"]]
     hdri_ids = [name for name in hdri_ids if "high contrast" not in hdri_data[name]["metadata"]["categories"]]

@@ -66,3 +66,4 @@ ENV/
 *.bak
 .DS_Store
 Thumbs.db
+*.pyc

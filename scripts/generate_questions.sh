@@ -78,11 +78,11 @@ python generate_questions_pose.py \
    --instances_per_template 1 \
    --templates_per_image 5 \
    --metadata_file metadata_part_occlusion.json \
-   --output_questions_file ../output/ver_6d_questions/questions/L3/superclevr_questions_6d_aux.json \
+   --output_questions_file ../output/ver_6d_questions/questions/L3/superclevr_questions_6d.json \
    --template_dir TEMPLATES/L1_L3_spatial_questions \
 # --remove_redundant 1.0
 
-
+qq
 python generate_questions_physics.py \
    --input_scene_file ../output/ver_6d_questions/superCLEVR_scenes_with_collision.json \
    --scene_start_idx ${START_IDX} \
@@ -90,6 +90,6 @@ python generate_questions_physics.py \
    --instances_per_template 1 \
    --templates_per_image 5 \
    --metadata_file metadata_part_occlusion.json \
-   --output_questions_file ../output/ver_6d_questions/questions/L3/superclevr_questions_physics_aux.json \
+   --output_questions_file ../output/ver_6d_questions/questions/L3/superclevr_questions_physics.json \
    --template_dir TEMPLATES/L3_physics \
 #    --remove_redundant 0.5
