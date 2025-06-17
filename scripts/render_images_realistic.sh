@@ -18,10 +18,9 @@ python super_restore_render_images_realistic_texture.py -- \
     --output_scene_file ../output/ver_realistic/superCLEVR_scenes.json \
     --is_part 0 \
     --load_scene 1 \
-    --clevr_scene_path /mnt/ccvl15/xingrui/superclevr_6d/superCLEVR_scenes.json
 
-
-    # --load_scene 1 
+    # --load_scene 1 \
+    # --clevr_scene_path /mnt/ccvl15/xingrui/superclevr_6d/superCLEVR_scenes.json
     # --clevr_scene_path ../output/ver_mask_teaser/superCLEVR_scenes.json 
 
 cd ..
