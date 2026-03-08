@@ -12,13 +12,13 @@ python super_restore_render_images_realistic_texture.py -- \
     --save_blendfiles 1 \
     --width 640 \
     --height 480 \
-    --output_image_dir ../output/ver_realistic/images/ \
-    --output_scene_dir ../output/ver_realistic/scenes/ \
-    --output_blend_dir /home/xingrui/vqa/Spatial457/output/ver_realistic/blendfiles \
-    --output_scene_file ../output/ver_realistic/superCLEVR_scenes.json \
+    --output_image_dir ../output/spatial457/images/ \
+    --output_scene_dir ../output/spatial457/scenes/ \
+    --output_blend_dir /Path/to/blendfiles \
+    --output_scene_file ../output/spatial457/spatial457_scenes.json \
     --is_part 0 \
     --load_scene 1 \
-    --clevr_scene_path /home/xingrui/publish/superclevr_6D_questions/output/ver_6d_questions/superCLEVR_scenes.json\
+    --clevr_scene_path output/spatial457_scenes.json\
 
     # --load_scene 1 \
     # --clevr_scene_path /mnt/ccvl15/xingrui/superclevr_6d/superCLEVR_scenes.json
