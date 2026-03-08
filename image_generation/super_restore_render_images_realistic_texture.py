@@ -316,8 +316,8 @@ def render_scene(args,
     # them in the scene structure
     camera = bpy.data.objects['Camera']
     if clevr_scene_path is not None:
-        
         camera.location = clevr_scene[idx]['camera_location']
+        
     plane_normal = plane.data.vertices[0].normal
     
     # cam_behind = camera.matrix_world.to_quaternion() * Vector((0, 0, -1))
@@ -343,7 +343,7 @@ def render_scene(args,
 
     # set dome feature
 
-    hdri_source = kb.AssetSource.from_manifest(args.hdri_assets, scratch_dir='/home/xingrui/tmp')
+    hdri_source = kb.AssetSource.from_manifest(args.hdri_assets, scratch_dir='/home/xingrui/tmp2')
     
     train_backgrounds, test_backgrounds = hdri_source.get_test_split(fraction=0.1)
     # train_backgrounds = [name]

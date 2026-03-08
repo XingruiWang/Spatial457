@@ -82,7 +82,7 @@ python generate_questions_pose.py \
    --template_dir TEMPLATES/L1_L3_spatial_questions \
 # --remove_redundant 1.0
 
-qq
+
 python generate_questions_physics.py \
    --input_scene_file ../output/ver_6d_questions/superCLEVR_scenes_with_collision.json \
    --scene_start_idx ${START_IDX} \
