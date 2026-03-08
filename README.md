@@ -215,6 +215,13 @@ pip install -r requirement.txt
 bash scripts/render_images_realistic.sh
 ```
 
+**Note (Reproducing scenes):** If you want to reproduce scenes from pre-generated data (i.e., using `--load_scene 1`), download `spatial457_scenes_21k.json` from the [Hugging Face dataset](https://huggingface.co/datasets/RyanWW/Spatial457), then set `--clevr_scene_path` in `scripts/render_images_realistic.sh` (lines 22–23) to the downloaded path:
+
+```bash
+# Download: huggingface-cli download RyanWW/Spatial457 spatial457_scenes_21k.json --repo-type dataset --local-dir output/
+# In render_images_realistic.sh, ensure: --clevr_scene_path $SPATIAL457_DIR/output/spatial457_scenes_21k.json
+```
+
 This will generate:
 - **Images**: Rendered RGB images in `output/ver_realistic/images/`
 - **Scene annotations**: JSON files with 3D scene information in `output/ver_realistic/scenes/`
