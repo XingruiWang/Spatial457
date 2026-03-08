@@ -315,8 +315,8 @@ def render_scene(args,
     # Figure out the left, up, and behind directions along the plane and record
     # them in the scene structure
     camera = bpy.data.objects['Camera']
-    if clevr_scene_path is not None:
-        camera.location = clevr_scene[idx]['camera_location']
+    # if clevr_scene_path is not None:
+    #     camera.location = clevr_scene[idx]['camera_location']
         
     plane_normal = plane.data.vertices[0].normal
     
