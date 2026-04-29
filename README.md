@@ -45,6 +45,15 @@
 Spatial457 is a diagnostic benchmark designed to evaluate the 6D spatial reasoning capabilities of large multimodal models (LMMs). It systematically introduces four key capabilities—multi-object understanding, 2D and 3D localization, and 3D orientation—across five difficulty levels and seven question types, progressing from basic recognition to complex physical interaction.
 </p>
 
+<h2 class="title is-3">🏗️ Built Upon</h2>
+<p>
+Spatial457 builds upon <a href="https://arxiv.org/abs/2212.00259">SuperCLEVR</a>, a synthetic benchmark for compositional visual reasoning with 3D-rendered scenes. We extend its scene generation pipeline to support 6D spatial reasoning tasks across five difficulty levels.
+</p>
+<p>
+Evaluation is supported by <a href="https://github.com/open-compass/VLMEvalKit">VLMEvalKit</a>, an open-source toolkit for evaluating large vision-language models across diverse benchmarks.
+</p>
+
+
 <h2 class="title is-3">🚀 Quick Start</h2>
 
 ### For Evaluation Only
